@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="conference-form-wrapper">
+        <div>
+          <h1 class="margin-b">Conference Registration</h1>
+            <p class="margin-b main-text">
+            Please book for your conference by filling the form below, specify
+            the expected number joining the conference
+          </p>
+        </div>
+        <div>
+            <form class="border-top">
+                <div class="field-wrapper">
+                    <label class="bold" for="fname">Full Name <span>*</span></label>
+                    <div class="input-wrapper">
+                        <input type="text" id="fname"> 
+                        <p class="decription small-text">First Name</p>
+                    </div>
+                    <div class="input-wrapper"> 
+                        <input type="text"> 
+                        <p class="decription small-text">Last Name</p>
+                    </div>
+                </div>
+                <div class="field-wrapper">
+                    <label class="bold" for="email">E-mail <span>*</span></label>
+                    <div class="input-wrapper">
+                        <input type="text" id="email" placeholder="ex: myname@example.com"> 
+                        <p class="decription small-text">example@example.com</p>
+                    </div>
+                    
+                </div>
+                <div class="field-wrapper">
+                    <label class="bold" for="ph">Phone Number <span>*</span></label>
+                    <div class="input-wrapper">
+                        <input type="text" id="ph" placeholder="(000) 000-0000"> 
+                    
+                    </div>
+                    
+                </div>
+                <div class="field-wrapper">
+                    <label class="bold" for="people">Number of people attending <span>*</span></label>
+                    <div class="input-wrapper">
+                        <input type="text" id="people"> 
+    
+                    </div>
+                    
+                </div>
+
+                <div class="margin-b-high">
+                    <label class="bold" for="address">Address</label>
+                    <p class="decription small-text">Street Address</p>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" id="address"> 
+                    <p class="decription small-text">Street Address Line 2</p>
+                </div>
+                <div class="field-wrapper margin-t">
+
+                    <div class="input-wrapper">
+                        <input type="text"> 
+                        <p class="decription small-text">City</p>
+                    </div>
+                    <div class="input-wrapper"> 
+                        <input type="text"> 
+                        <p class="decription small-text">State/Province</p>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text"> 
+                    <p class="decription">Postal / Zip Code</p>
+                </div>
+                <div class="content-wrapper">
+                    <p>Payments are processed through PayPal. You have pay using an existing PayPal account,or any manjor credit card / debit card</p>
+                </div>
+
+                <p class="font-weight margin-b-high">My Products</p>
+                <div class="field-wrapper bg-red border-radius-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="height : 40px;color:red">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                          </svg>
+                          
+                    </div>
+                    <div class="margin-left">
+                        <p> <ul> <li>You haven't finished configuring the payment integration</li> </ul></p>
+                        <p class="text-red">Go to <span class="bold">Payment Settings</span> to configure your payment details and products</p>
+                    </div>
+                </div>
+                <div class="checkbox-container margin-t-high border-b padding-b-2">
+                    <div class="check-flex">
+                    <input type="checkbox"  class="padding-2"/> 
+                    <label class="bold ">Conference Full-Access w/ Dinner (member)</label>
+                    </div>
+                    <p class="bold">$125.00</p>
+                </div>
+                <div class="checkbox-container margin-t-high border-b padding-b-2">
+                    <div class="check-flex">
+                    <input type="checkbox" class="padding-2"/> 
+                    
+                    <label class="bold text-left">Conference Full-Access w/ Dinner (non-member)</label>
+                    </div>
+                    <p class="bold">$150.00</p>
+                </div>
+                <div class="total-container">
+                    <p class="bold">Total</p>
+                    <p class="bold">$0.00</p>
+                    
+                </div>
+
+                <div class="radio-container">
+                    <p class="bold">Payment Methods</p>
+                    <div class="check-flex">
+                    <input type="radio">
+                    <label><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="height: 16px;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
+                      </svg>
+                      Debit or Credit Card
+                      </label>
+                    </div>
+
+                    <div class="check-flex">
+                      <input type="radio"><label>
+                        <img class="paypal-img" src="paypal.png" alt="paypal-icon" >
+                         <!-- PayPal -->
+                      </label>
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="btn-flex">
+                <button class="btn">Submit</button>
+                </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
